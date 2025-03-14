@@ -1,7 +1,7 @@
 //const input_bar_default = [0,0];
 var input= [0,0,0];//[0,0,0,0];
 var inputindex = 0;
-var bps = 180//250; // beat per second in milliseconds
+var bps = 220//250; // beat per second in milliseconds
 var nextInput = performance.now();
 var timeFreeze = false;
 var timeFreezeActions = [];
@@ -109,3 +109,4 @@ function game_input_detect(e)
         input[inputindex-1]=1;
 }
 document.addEventListener("keydown", game_input_detect,true);
+document.addEventListener("click", game_input_detect,true);
